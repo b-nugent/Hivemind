@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home/home_page.dart';
-import 'splash_screen.dart';
+import '../home/home_page.dart';
 
 class SplashScreenWrapper extends StatefulWidget {
   const SplashScreenWrapper({super.key});
@@ -24,6 +23,23 @@ class _SplashScreenWrapperState extends State<SplashScreenWrapper> {
 
   @override
   Widget build(BuildContext context) {
-    return const SplashScreen();
+    return const _SplashScreen();
+  }
+}
+
+class _SplashScreen extends StatelessWidget {
+  const _SplashScreen({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Image(
+          image: AssetImage('assets/images/hivemind_logo.png'),
+          width: 360,
+          height: 360,
+        ),
+      ),
+    );
   }
 }
