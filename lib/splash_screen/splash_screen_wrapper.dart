@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../home/home_page.dart';
+import '../home/home.dart';
 
 class SplashScreenWrapper extends StatefulWidget {
   const SplashScreenWrapper({super.key});
@@ -28,7 +28,8 @@ class _SplashScreenWrapperState extends State<SplashScreenWrapper> {
 }
 
 class _SplashScreen extends StatelessWidget {
-  const _SplashScreen({super.key});
+  const _SplashScreen();
+
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
