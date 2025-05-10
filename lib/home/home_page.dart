@@ -4,10 +4,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Text("What's buzzing?"),
-        ],
+      appBar: AppBar(
+        title: const Text("Hivemind"),
+      ),
+      body: Center(
+        child: Text("What's buzzing?"),
       ),
     );
   }

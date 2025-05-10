@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hivemind/home/home_page.dart';
+import 'splash_screen_wrapper.dart';
 
 void main() {
   runApp(Hivemind());
@@ -18,7 +19,7 @@ class Hivemind extends StatelessWidget {
           seedColor: const Color.fromARGB(255, 255, 189, 104),
         ),
       ),
-      home: HomePage(),
+      home: SplashScreenWrapper(),
     );
   }
 }

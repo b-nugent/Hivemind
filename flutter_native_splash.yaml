@@ -1,0 +1,10 @@
+# Configuration for flutter_native_splash
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/hivemind_logo.png
+  android: true
+  ios: true
+  web: false
+  android_12:
+    image: assets/images/hivemind_logo.png
+    icon_background_color: "#FFFFFF"
