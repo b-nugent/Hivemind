@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hivemind/home/home_page.dart';
 import 'splash_screen_wrapper.dart';
 
 void main() {
