@@ -1,7 +1,5 @@
-// This file contains the main Hivemind widget tree.
-// Do NOT call runApp or main() here directly. Use the environment-specific entrypoints.
 import 'package:flutter/material.dart';
-import 'home/home_page.dart';
+import 'home/view/home_page.dart';
 import 'splash_screen/splash_screen.dart';
 import 'dart:io' show Platform;
 

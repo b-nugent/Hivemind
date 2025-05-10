@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../home/home.dart';
+import '../inspections.dart';
 
 class InspectionsPage extends StatelessWidget {
   const InspectionsPage({super.key});
@@ -13,7 +14,7 @@ class InspectionsPage extends StatelessWidget {
           title: const Text('Hive Inspections'),
           backgroundColor: Color(0xFFFFF9C4),
         ),
-        body: const Center(child: Text('Inspections go here.')),
+        body: const InspectionsView(),
       ),
     );
   }

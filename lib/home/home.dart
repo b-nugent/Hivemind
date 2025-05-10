@@ -1,2 +1,2 @@
-export 'app_background.dart';
-export 'home_page.dart';
+export 'view/view.dart';
+export 'widgets/widgets.dart';
