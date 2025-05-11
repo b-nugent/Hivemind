@@ -11,7 +11,10 @@ class ContentFrame extends StatelessWidget {
       borderRadius: BorderRadius.circular(16),
       child: Container(
         color: const Color(0xFFFFF9C4),
-        child: child,
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: child,
+        ),
       ),
     );
   }

@@ -20,7 +20,10 @@ class HomePage extends StatelessWidget {
               SearchPageButton(),
             ],
           ),
-          drawer: const SettingsPage(),
+          drawer: FractionallySizedBox(
+            widthFactor: 0.8,
+            child: const SettingsPage(),
+          ),
           body: const HomeView(),
         ),
       ),

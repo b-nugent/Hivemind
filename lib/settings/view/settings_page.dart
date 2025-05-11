@@ -10,7 +10,7 @@ class SettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBackground(
       child: Scaffold(
-        backgroundColor: Colors.transparent,
+        backgroundColor: const Color(0xFFFFF9C4),
         appBar: const HivemindAppBar(
           title: 'Settings',
           leading: CloseButton(),

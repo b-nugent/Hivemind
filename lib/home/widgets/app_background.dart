@@ -12,7 +12,7 @@ class AppBackground extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          scale: 2,
+          scale: 2.2,
           image: AssetImage('assets/images/honeycomb_tile.png'),
           repeat: ImageRepeat.repeat,
           fit: BoxFit.none,
