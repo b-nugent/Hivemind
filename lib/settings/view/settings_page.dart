@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../home/home.dart';
+import 'package:hivemind/app_bar/app_bar.dart';
+import 'package:hivemind/home/home.dart';
+import 'package:hivemind/settings/settings.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
@@ -9,11 +11,11 @@ class SettingsPage extends StatelessWidget {
     return AppBackground(
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        appBar: AppBar(
-          title: const Text('Settings'),
-          backgroundColor: Color(0xFFFFF9C4),
+        appBar: const HivemindAppBar(
+          title: 'Settings',
+          leading: CloseButton(),
         ),
-        body: const Center(child: Text('Settings go here.')),
+        body: const SettingsView(),
       ),
     );
   }

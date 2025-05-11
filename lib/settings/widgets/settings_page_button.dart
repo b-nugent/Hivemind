@@ -1,33 +1,16 @@
 import 'package:flutter/material.dart';
 
-import '../settings.dart';
-
 class SettingsPageButton extends StatelessWidget {
   const SettingsPageButton({super.key});
 
   @override
   Widget build(BuildContext context) {
     return IconButton(
+      color: const Color(0xFFB8860B),
       icon: const Icon(Icons.settings),
+      tooltip: 'Settings',
       onPressed: () {
-        Navigator.of(context).push(
-          PageRouteBuilder(
-            pageBuilder: (context, animation, secondaryAnimation) =>
-                SettingsPage(),
-            transitionsBuilder:
-                (context, animation, secondaryAnimation, child) {
-              const begin = Offset(-1.0, 0.0);
-              const end = Offset.zero;
-              const curve = Curves.ease;
-              var tween =
-                  Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
-              return SlideTransition(
-                position: animation.drive(tween),
-                child: child,
-              );
-            },
-          ),
-        );
+        Scaffold.of(context).openDrawer();
       },
     );
   }

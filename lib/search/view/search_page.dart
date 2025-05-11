@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../home/home.dart';
+import 'package:hivemind/app_bar/app_bar.dart';
+import 'package:hivemind/home/home.dart';
+import 'package:hivemind/search/search.dart';
 
 class SearchPage extends StatelessWidget {
   const SearchPage({super.key});
@@ -9,10 +11,8 @@ class SearchPage extends StatelessWidget {
     return AppBackground(
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        appBar: AppBar(
-          title: const Text('Search'),
-          backgroundColor: Color(0xFFFFF9C4),
-        ),
+        appBar: const HivemindAppBar(title: 'Search'),
+        body: const SearchView(),
       ),
     );
   }

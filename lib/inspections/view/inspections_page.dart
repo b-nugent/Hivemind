@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../home/home.dart';
-import '../inspections.dart';
+import 'package:hivemind/app_bar/app_bar.dart';
+import 'package:hivemind/home/widgets/app_background.dart';
+import 'package:hivemind/inspections/view/inspections_view.dart';
 
 class InspectionsPage extends StatelessWidget {
   const InspectionsPage({super.key});
@@ -10,10 +11,7 @@ class InspectionsPage extends StatelessWidget {
     return AppBackground(
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        appBar: AppBar(
-          title: const Text('Hive Inspections'),
-          backgroundColor: Color(0xFFFFF9C4),
-        ),
+        appBar: const HivemindAppBar(title: 'Hive Inspections'),
         body: const InspectionsView(),
       ),
     );

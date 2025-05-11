@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import '../../inspections/inspections.dart';
-import '../../settings/settings.dart';
-import '../../search/search.dart';
-import '../home.dart';
+import 'package:hivemind/app_bar/app_bar.dart';
+import 'package:hivemind/home/home.dart';
+import 'package:hivemind/inspections/inspections.dart';
+import 'package:hivemind/settings/settings.dart';
+import 'package:hivemind/search/search.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -12,14 +13,14 @@ class HomePage extends StatelessWidget {
         child: Scaffold(
           backgroundColor: Colors.transparent,
           floatingActionButton: const InspectionButton(),
-          appBar: AppBar(
-            title: const Text("Hivemind"),
-            backgroundColor: Color(0xFFFFF9C4),
-            leading: const SettingsPageButton(),
+          appBar: const HivemindAppBar(
+            title: 'Hivemind',
+            leading: SettingsPageButton(),
             actions: [
-              const SearchPageButton(),
+              SearchPageButton(),
             ],
           ),
+          drawer: const SettingsPage(),
           body: const HomeView(),
         ),
       ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class InspectionsView extends StatelessWidget {
-  const InspectionsView({super.key});
+class SearchView extends StatelessWidget {
+  const SearchView({super.key});
 
   @override
   Widget build(BuildContext context) {

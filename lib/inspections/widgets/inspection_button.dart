@@ -12,10 +12,12 @@ class InspectionButton extends StatelessWidget {
           MaterialPageRoute(builder: (context) => const InspectionsPage()),
         );
       },
-      backgroundColor:
-          const Color(0xFFFFF9C4), // TODO(bnugent): Color(0xFFFFBD68),
-      tooltip: 'Go to Hive Inspections',
-      child: const Icon(Icons.assignment),
+      backgroundColor: const Color(0xFFFFF9C4),
+      tooltip: 'Hive Inspections',
+      child: const Icon(
+        Icons.assignment,
+        color: const Color(0xFFB8860B),
+      ),
     );
   }
 }
